@@ -6,4 +6,24 @@ html {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.spacer-1 {
+    margin-bottom: 1em;
+}
+
+.spacer-2 {
+    margin-bottom: 2em;
+}
+
+.spacer-4 {
+    margin-bottom: 4em;
+}
+
+.chart-box {
+    width: 30vw;
+    margin: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }

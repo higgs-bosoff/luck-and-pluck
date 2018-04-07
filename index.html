@@ -20,7 +20,7 @@
 </head>
 <body>
     <!-- HERO BANNER -->
-    <section class="hero is-primary is-bold has-text-centered">
+    <section class="hero is-primary is-bold is-medium has-text-centered">
         <div class="hero-body">
           <div class="container">
             <h1 class="title is-size-1">
@@ -32,14 +32,66 @@
         </div>
     </section>
 
-    <section class="section">
+    <section class="section has-text-justified">
         <div class="container">
             <h1 class="title">Talent vs. luck</h1>
             <h3>An interactive experience on the shape and reasons of social inequality</h3>
             <hr>
 
-            Things and stuff.
+            <p>
+                Social inequality is a source of a great deal of political arguments, and has been for quite a while. For some, the very existence of differences in lifestyle
+                as big as the ones between a minimum wage worker in a restaurant and the CEO of a big corporation is a fundamental injustice. Other argue however that this difference
+                only reflects a much more natural one: a difference in talent, or hard work, between the two.
+            </p>
+            <p>
+                In February 2018, a paper was published studying this very problem with a simple mathematical model. Specifically, the paper focuses on the source of success, 
+                and whether it is true that the best get farther, or if it's not rather just a matter of chance. The paper is title "Talent vs. Luck: the role of randomness in
+                success and failure", by A. Pluchino, A.E. Biondo, and A. Rapisarda, and can be downloaded <a href="https://arxiv.org/abs/1802.07068" target="_blank">here</a>.
+                If you know a bit of mathematics, it's a pretty easy read.
+            </p>
+
+            <div class="spacer-2"></div>
+            <h2>Ok, but... what does it say?</h2>
+            <hr>
+            <p>
+                It says that, if we make some reasonable assumptions, the amount of individual talent and hard work (our so-called <strong>pluck</strong>) is not enough to
+                explain the shape of the
+                distribution of wealth in our world. Rather, the distribution that we observe can only be justified by a fair amount of <strong>luck</strong>. In other words, 
+                rich people aren't most likely all rich because they're that good at whatever it is that they do. A lot of them are probably pretty average; they ended up being
+                rich because good things just happened to them by chance.
+            </p>
+            <div class="spacer-2"></div>
+            <h2>Wait, shape of the distribution? What is that?</h2>
+            <hr>
+            <p>
+                It's the mathematical way that we use to describe how likely it is to find a member of a certain group having a certain quality. A curve that 
+                connects the value of that quality (for example, a certain personal worth) to the likelihood of finding someone who has that value (for example, the likelihood 
+                of picking a random person and finding them having a personal worth higher than $1M is obviously tiny).
+            </p>
+
+            <div class="box chart-box">
+                <div id="chart-gaussian" class="ct-chart ct-perfect-fourth"></div>
+            </div>
+            <script>
+                makeGaussianPlot('#chart-gaussian');
+            </script>
+
+            <p>
+                For example, this distribution is called a "Gaussian". It represents things where a lot of people have so-and-so values (the peak in the middle), 
+                but very few people have either very low or very high ones (the tails at the left and right extremes). This is for example a typical distribution for IQ:
+                a lot of normal people, a few geniuses and complete idiots.
+            </p>
+
+            
+            <div class="box chart-box">
+                <div id="chart-pareto" class="ct-chart ct-perfect-fourth"></div>
+            </div>
+            <script>
+                makeParetoPlot('#chart-pareto');
+            </script>
         </div>
+
+
     </section>
 </body>
 </html>
