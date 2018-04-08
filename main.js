@@ -29,7 +29,7 @@ function makeGaussianPlot(sel, p_n, dsigma) {
 
 function makeParetoPlot(sel, p_n, alpha, xmax) {
     p_n = p_n | 101;
-    alpha = alpha == null? 0.27 : alpha;
+    alpha = alpha == null? 1.27 : alpha;
     xmax = xmax | 5;
 
     var data = {};

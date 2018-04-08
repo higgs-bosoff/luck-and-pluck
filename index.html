@@ -42,7 +42,7 @@
             </p>
             <p>
                 In February 2018, a paper was published studying this very problem with a simple mathematical model. Specifically, the paper focuses on the source of success, 
-                and whether it is true that the best get farther, or if it's not rather just a matter of chance. The paper is title "Talent vs. Luck: the role of randomness in
+                and whether it is true that the best get farther, or if it's not rather just a matter of chance. The paper is titled "Talent vs. Luck: the role of randomness in
                 success and failure", by A. Pluchino, A.E. Biondo, and A. Rapisarda, and can be downloaded <a href="https://arxiv.org/abs/1802.07068" target="_blank">here</a>.
                 If you know a bit of mathematics, it's a pretty easy read.
             </p>
@@ -62,8 +62,8 @@
             <hr>
             <p>
                 It's the mathematical way that we use to describe how likely it is to find a member of a certain group having a certain quality. A curve that 
-                connects the value of that quality (for example, a certain personal worth) to the likelihood of finding someone who has that value (for example, the likelihood 
-                of picking a random person and finding them having a personal worth higher than $1M is obviously tiny).
+                connects the value of that quality (for example, a certain personal worth) to the likelihood of finding someone who has that value (if you were to pick one random person
+                from a phone book, it would be much more likely to find someone with less than $100K in their account than someone with more than $1M).
             </p>
 
             <div class="box chart-box">
@@ -76,7 +76,8 @@
             <p>
                 For example, this is called a <a href="https://en.wikipedia.org/wiki/Normal_distribution">normal distribution</a>. It represents things where a lot of people have so-and-so values (the peak in the middle), 
                 but very few people have either very low or very high ones (the tails at the left and right extremes). This is a typical distribution for IQ:
-                a lot of normal people, a few geniuses and a few complete idiots.
+                a lot of normal people, a few geniuses and a few complete idiots. The distribution is characterised by an average value and by a width, that determines how broad the bell 
+                shape ends up being.
             </p>
 
             
@@ -86,11 +87,21 @@
             <script>
                 makeParetoPlot('#chart-pareto');
             </script>
+            <p>
+                This, instead, is called a <a href="https://en.wikipedia.org/wiki/Pareto_distribution">Pareto distribution</a>. It is traditionally used to describe the way that wealth is distributed among people, with less and less people who are richer and richer. It is characterised by a scale and by a factor that determines the shape of the distribution,
+                namely, how quickly it falls to very low probabilities. This factor is known as "Pareto index" and is one possible indicator of wealth inequality in a country: the higher the
+                index, the more wealth is concentrated in fewer hands.
+            </p>
 
-            This, instead, is called a <a href="https://en.wikipedia.org/wiki/Pareto_distribution">Pareto distribution</a>.
+            <div class="spacer-4"></div>
+            <h1 class="title">The simulation</h1>
+            <hr>
+            <p>
+                The simulation used by the authors of the paper is pretty simple. It consists of placing a number of individuals with a normal distribution of a <strong>talent</strong> value on a square map, all starting with the same amount of wealth, and then moving randomly around events representing <strong>good</strong> and <strong>bad luck</strong>.
+            </p>
+
+
         </div>
-
-
     </section>
 </body>
 </html>
